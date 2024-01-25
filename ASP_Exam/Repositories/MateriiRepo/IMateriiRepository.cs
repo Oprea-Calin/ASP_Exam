@@ -6,6 +6,7 @@ namespace ASP_Exam.Repositories.MateriiRepo
     public interface IMateriiRepository : IGenericRepository<Materii>
     {
         Task<List<Materii>> GetMateriiAsync();
+        Task<bool> UpdateAsync(Materii materii);
 
     }
 }

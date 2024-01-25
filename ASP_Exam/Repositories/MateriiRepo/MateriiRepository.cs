@@ -16,6 +16,12 @@ namespace ASP_Exam.Repositories.MateriiRepo
         {
             return await _examContext.Materii.ToListAsync();
         }
+        public async Task<bool> UpdateAsync(Materii materii)
+        {
+            _examContext.Update(materii);
+            await _examContext.SaveChangesAsync();
+            return true;
+        }
 
     }
 }

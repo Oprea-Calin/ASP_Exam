@@ -10,7 +10,7 @@ namespace ASP_Exam.Data.DTOs
         public int Age { get; set; }
 
         [Required]
-        public Role role { get; set; }
+        public string role { get; set; }
 
 
     }

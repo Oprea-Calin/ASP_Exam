@@ -10,6 +10,8 @@ namespace ASP_Exam.Services
         Task<List<Profesori>> GetAllAsync();
         Task<Profesori> GetByName(string name);
         Task<bool> Register(ProfesorRegisterDTO profesoriRegisterDto, string profesorRole);
+        Task<bool> AssignMaterieToProfesor(string username, Materii materii);
+
 
 
     }

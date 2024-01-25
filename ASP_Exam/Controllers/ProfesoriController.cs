@@ -49,6 +49,18 @@ namespace ASP_Exam.Controllers
             return Ok(response);
         }
 
+        [AllowAnonymous]
+        [HttpPost("Assign-materie-to-profesor")]
+        public async Task<IActionResult> AssignMaterii(string nume, Materii materie)
+        {
+            var response = await _profesoriService.AssignMaterieToProfesor(nume,materie);
+            if (response == false)
+            {
+                return BadRequest();
+            }
+
+            return Ok(response);
+        }
     
     }
 }
