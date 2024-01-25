@@ -55,7 +55,6 @@ app.UseCors("Policy");
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseRouting();
-//app.UseMiddleware<JwtMiddleware>();
 app.UseAuthentication();
 
 app.MapControllerRoute(

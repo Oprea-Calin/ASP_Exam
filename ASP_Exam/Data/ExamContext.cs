@@ -5,7 +5,8 @@ namespace ASP_Exam.Data
 {
     public class ExamContext : DbContext
     {
-        public DbSet<User> Users { get; set; }
+        public DbSet<Profesori> Profesori { get; set; }
+        public DbSet<Materii> Materii { get; set; }
 
         public ExamContext(DbContextOptions<ExamContext> options) : base(options) { }
 
